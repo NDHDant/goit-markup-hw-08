@@ -2,15 +2,24 @@
   padding-top: 0;
 
   &__title {
-    margin-bottom: 50px;
+    display: none;
 
-    font-size: 36px;
-    line-height: 1.17;
+    @media screen and (min-width: 1200px) {
+      display: block;
+      margin-bottom: 50px;
+
+      font-size: 36px;
+      line-height: 1.17;
+    }
   }
 
   &__list {
-    display: flex;
-    gap: 30px;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      gap: 30px;
+    }
   }
 
   &__item {

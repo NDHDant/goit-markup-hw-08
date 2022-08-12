@@ -87,9 +87,23 @@ ol {
 }
 
 .conteiner {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
 }
 
 .title {
@@ -639,10 +653,22 @@ ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 .benefits__item {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .benefits__item {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .benefits__logo {
   display: -webkit-box;
@@ -654,18 +680,33 @@ ol {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   margin-bottom: 30px;
   background: #f5f4fa;
   border-radius: 4px;
 }
+@media screen and (min-width: 768px) {
+  .benefits__logo {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__logo {
+    max-width: 270px;
+  }
+}
 .benefits__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
 }
 .benefits__text {
   line-height: 1.71;
@@ -675,15 +716,26 @@ ol {
   padding-top: 0;
 }
 .about__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .about__title {
+    display: block;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 .about__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .about__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
 }
 .about__item {
   position: relative;
