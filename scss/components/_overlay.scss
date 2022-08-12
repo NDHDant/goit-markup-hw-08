@@ -1,0 +1,53 @@
+.overlay {
+  position: relative;
+  overflow: hidden;
+
+  &__card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+
+    width: 100%;
+    height: 100%;
+
+    padding: 64px 24px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform var(--anim-cubic);
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+
+    color: var(--white-color);
+
+    user-select: none;
+  }
+
+  &__box {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+    user-select: none;
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+}
