@@ -33,5 +33,9 @@
 }
 
 .socials__footer {
-  margin-right: 93px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }

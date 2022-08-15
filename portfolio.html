@@ -30,6 +30,13 @@
       <!-- Logo -->
       <div class="header__conteiner conteiner">
         <a class="logo link" href="./index.html">Web<span class="logo__text">Studio</span></a>
+
+        <button class="header__btn" type="button" data-menu-open>
+          <svg class="icon" width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+
         <!-- Header nav -->
         <nav class="nav">
           <ul class="nav__list list">
@@ -103,12 +110,64 @@
             <li class="projects__item">
               <a class="projects__link link" href="">
                 <div class="overlay">
-                  <img
-                    class="overlay__img img"
-                    src="./images/projects-img/img-1.jpeg"
-                    alt="Ноутбук Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img/img-1sm@1x.webp 1x,
+                        ./images/projects-img/img-1sm@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-1sm@1x.jpg 1x,
+                        ./images/projects-img/img-1sm@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-1md@1x.webp 1x,
+                        ./images/projects-img/img-1md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-1md@1x.jpg 1x,
+                        ./images/projects-img/img-1md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-1lg@1x.webp 1x,
+                        ./images/projects-img/img-1lg@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-1lg@1x.jpg 1x,
+                        ./images/projects-img/img-1lg@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="overlay__img img"
+                      src="./images/projects-img/img-1sm@1x.jpg"
+                      alt="Ноутбук Технокряк"
+                      width="100%"
+                    />
+                  </picture>
                   <div class="overlay__card">
                     <p class="overlay__description text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -126,12 +185,65 @@
             <li class="projects__item">
               <a class="projects__link link" href="">
                 <div class="overlay">
-                  <img
-                    class="overlay__img img"
-                    src="./images/projects-img/img-2.jpeg"
-                    alt="Ноутбук Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img/img-2sm@1x.webp 1x,
+                        ./images/projects-img/img-2sm@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-2sm@1x.jpg 1x,
+                        ./images/projects-img/img-2sm@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-2md@1x.webp 1x,
+                        ./images/projects-img/img-2md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-2md@1x.jpg 1x,
+                        ./images/projects-img/img-2md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-2lg@1x.webp 1x,
+                        ./images/projects-img/img-2lg@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-2lg@1x.jpg 1x,
+                        ./images/projects-img/img-2lg@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="overlay__img img"
+                      src="./images/projects-img/img-2sm@1x.jpg"
+                      alt="Ноутбук Технокряк"
+                      width="100%"
+                    />
+                  </picture>
                   <div class="overlay__card">
                     <p class="overlay__description text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -149,12 +261,65 @@
             <li class="projects__item">
               <a class="projects__link link" href="">
                 <div class="overlay">
-                  <img
-                    class="overlay__img img"
-                    src="./images/projects-img/img-3.jpeg"
-                    alt="Ноутбук Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img/img-3sm@1x.webp 1x,
+                        ./images/projects-img/img-3sm@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-3sm@1x.jpg 1x,
+                        ./images/projects-img/img-3sm@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-3md@1x.webp 1x,
+                        ./images/projects-img/img-3md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-3md@1x.jpg 1x,
+                        ./images/projects-img/img-3md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-3lg@1x.webp 1x,
+                        ./images/projects-img/img-3lg@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-3lg@1x.jpg 1x,
+                        ./images/projects-img/img-3lg@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="overlay__img img"
+                      src="./images/projects-img/img-3sm@1x.jpg"
+                      alt="Ноутбук Технокряк"
+                      width="100%"
+                    />
+                  </picture>
                   <div class="overlay__card">
                     <p class="overlay__description text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -172,12 +337,65 @@
             <li class="projects__item">
               <a class="projects__link link" href="">
                 <div class="overlay">
-                  <img
-                    class="overlay__img img"
-                    src="./images/projects-img/img-4.jpeg"
-                    alt="Ноутбук Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img/img-4sm@1x.webp 1x,
+                        ./images/projects-img/img-4sm@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-4sm@1x.jpg 1x,
+                        ./images/projects-img/img-4sm@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-4md@1x.webp 1x,
+                        ./images/projects-img/img-4md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-4md@1x.jpg 1x,
+                        ./images/projects-img/img-4md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-4lg@1x.webp 1x,
+                        ./images/projects-img/img-4lg@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-4lg@1x.jpg 1x,
+                        ./images/projects-img/img-4lg@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="overlay__img img"
+                      src="./images/projects-img/img-4sm@1x.jpg"
+                      alt="Ноутбук Технокряк"
+                      width="100%"
+                    />
+                  </picture>
                   <div class="overlay__card">
                     <p class="overlay__description text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -195,12 +413,65 @@
             <li class="projects__item">
               <a class="projects__link link" href="">
                 <div class="overlay">
-                  <img
-                    class="overlay__img img"
-                    src="./images/projects-img/img-5.jpeg"
-                    alt="Ноутбук Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img/img-1sm@1x.webp 1x,
+                        ./images/projects-img/img-1sm@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-5sm@1x.jpg 1x,
+                        ./images/projects-img/img-5sm@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-5md@1x.webp 1x,
+                        ./images/projects-img/img-5md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-5md@1x.jpg 1x,
+                        ./images/projects-img/img-5md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-5lg@1x.webp 1x,
+                        ./images/projects-img/img-5lg@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-5lg@1x.jpg 1x,
+                        ./images/projects-img/img-5lg@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="overlay__img img"
+                      src="./images/projects-img/img-5sm@1x.jpg"
+                      alt="Ноутбук Технокряк"
+                      width="100%"
+                    />
+                  </picture>
                   <div class="overlay__card">
                     <p class="overlay__description text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -218,12 +489,65 @@
             <li class="projects__item">
               <a class="projects__link link" href="">
                 <div class="overlay">
-                  <img
-                    class="overlay__img img"
-                    src="./images/projects-img/img-6.jpeg"
-                    alt="Ноутбук Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img/img-6sm@1x.webp 1x,
+                        ./images/projects-img/img-6sm@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-6sm@1x.jpg 1x,
+                        ./images/projects-img/img-6sm@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-6md@1x.webp 1x,
+                        ./images/projects-img/img-6md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-6md@1x.jpg 1x,
+                        ./images/projects-img/img-6md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-6lg@1x.webp 1x,
+                        ./images/projects-img/img-6lg@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-6lg@1x.jpg 1x,
+                        ./images/projects-img/img-6lg@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="overlay__img img"
+                      src="./images/projects-img/img-6sm@1x.jpg"
+                      alt="Ноутбук Технокряк"
+                      width="100%"
+                    />
+                  </picture>
                   <div class="overlay__card">
                     <p class="overlay__description text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -241,12 +565,65 @@
             <li class="projects__item">
               <a class="projects__link link" href="">
                 <div class="overlay">
-                  <img
-                    class="overlay__img img"
-                    src="./images/projects-img/img-7.jpeg"
-                    alt="Ноутбук Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img/img-7sm@1x.webp 1x,
+                        ./images/projects-img/img-7sm@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-7sm@1x.jpg 1x,
+                        ./images/projects-img/img-7sm@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-7md@1x.webp 1x,
+                        ./images/projects-img/img-7md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-7md@1x.jpg 1x,
+                        ./images/projects-img/img-7md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-7lg@1x.webp 1x,
+                        ./images/projects-img/img-7lg@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-7lg@1x.jpg 1x,
+                        ./images/projects-img/img-7lg@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="overlay__img img"
+                      src="./images/projects-img/img-7sm@1x.jpg"
+                      alt="Ноутбук Технокряк"
+                      width="100%"
+                    />
+                  </picture>
                   <div class="overlay__card">
                     <p class="overlay__description text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -264,12 +641,65 @@
             <li class="projects__item">
               <a class="projects__link link" href="">
                 <div class="overlay">
-                  <img
-                    class="overlay__img img"
-                    src="./images/projects-img/img-8.jpeg"
-                    alt="Ноутбук Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img/img-8sm@1x.webp 1x,
+                        ./images/projects-img/img-8sm@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-8sm@1x.jpg 1x,
+                        ./images/projects-img/img-8sm@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-8md@1x.webp 1x,
+                        ./images/projects-img/img-8md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-8md@1x.jpg 1x,
+                        ./images/projects-img/img-8md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-8lg@1x.webp 1x,
+                        ./images/projects-img/img-8lg@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-8lg@1x.jpg 1x,
+                        ./images/projects-img/img-8lg@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="overlay__img img"
+                      src="./images/projects-img/img-8sm@1x.jpg"
+                      alt="Ноутбук Технокряк"
+                      width="100%"
+                    />
+                  </picture>
                   <div class="overlay__card">
                     <p class="overlay__description text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -287,12 +717,65 @@
             <li class="projects__item">
               <a class="projects__link link" href="">
                 <div class="overlay">
-                  <img
-                    class="overlay__img img"
-                    src="./images/projects-img/img-9.jpeg"
-                    alt="Ноутбук Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/projects-img/img-9sm@1x.webp 1x,
+                        ./images/projects-img/img-9sm@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-9sm@1x.jpg 1x,
+                        ./images/projects-img/img-9sm@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-9md@1x.webp 1x,
+                        ./images/projects-img/img-9md@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-9md@1x.jpg 1x,
+                        ./images/projects-img/img-9md@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpg"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/projects-img/img-9lg@1x.webp 1x,
+                        ./images/projects-img/img-9lg@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects-img/img-9lg@1x.jpg 1x,
+                        ./images/projects-img/img-9lg@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpg"
+                    />
+
+                    <img
+                      class="overlay__img img"
+                      src="./images/projects-img/img-9sm@1x.jpg"
+                      alt="Ноутбук Технокряк"
+                      width="100%"
+                    />
+                  </picture>
                   <div class="overlay__card">
                     <p class="overlay__description text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
